@@ -17,7 +17,7 @@ const Session = () => {
     id: currentDay,
     title: `Dia ${currentDay}: ${getSessionTitle(currentDay)}`,
     description: getSessionDescription(currentDay),
-    audioUrl: `../sessions/day${currentDay}.mp3`, // Replace with actual audio URL
+    audioUrl: `/sessions/day${currentDay}.mp3`, // Replace with actual audio URL
     duration: "20:00",
   };
 
