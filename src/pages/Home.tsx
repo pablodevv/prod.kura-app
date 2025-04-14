@@ -11,7 +11,7 @@ const Home = () => {
     <div className="min-h-screen p-6 dark:text-white">
       <div className="max-w-lg mx-auto">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">Bem-vindo ao Kura</h1>
+          <h1 className="text-3xl font-bold mb-2">Bem-vindo ao Kure</h1>
           <p className="text-gray-600 dark:text-gray-300">
             Sua jornada personalizada de transformação através da hipnoterapia
           </p>
