@@ -8,7 +8,7 @@ const Header = () => {
       <div className="max-w-lg mx-auto px-4 h-16 flex items-center">
         <Link to="/" className="flex items-center space-x-2">
           <Brain className="text-purple-600" size={32} />
-          <span className="text-2xl font-bold text-gray-900 dark:text-white">Kura</span>
+          <span className="text-2xl font-bold text-gray-900 dark:text-white">Kure</span>
         </Link>
       </div>
     </header>
