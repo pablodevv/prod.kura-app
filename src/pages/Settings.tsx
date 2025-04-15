@@ -44,27 +44,7 @@ const Settings = () => {
             </div>
           </div>
 
-          <div className="p-4">
-            <h2 className="font-semibold mb-2">Período do Programa</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              Selecione a duração do seu programa
-            </p>
-            <div className="space-y-2">
-              {[7, 30, 90].map((days) => (
-                <button
-                  key={days}
-                  onClick={() => handleSubscriptionChange(days)}
-                  className={`w-full p-3 rounded-lg text-left ${
-                    subscriptionDays === days
-                      ? 'bg-purple-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-700'
-                  }`}
-                >
-                  {days} dias
-                </button>
-              ))}
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>
