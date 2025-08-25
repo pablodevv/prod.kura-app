@@ -17,7 +17,7 @@ const Session = () => {
     id: currentDay,
     title: `Dia ${currentDay}: ${getSessionTitle(currentDay)}`,
     description: getSessionDescription(currentDay),
-    audioUrl: `/sessions/day${currentDay}.mp3`, // Replace with actual audio URL
+    audioUrl: `/sessions/day${currentDay}.mp3`,
     duration: "20:00",
   };
 
@@ -28,7 +28,6 @@ const Session = () => {
         currentDay: Math.min(currentDay + 1, subscriptionDays),
       }));
       
-      // Navigate to progress page if all sessions are completed
       if (currentDay >= subscriptionDays) {
         navigate('/progress');
       }
