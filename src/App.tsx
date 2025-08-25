@@ -8,7 +8,6 @@ import Session from './pages/Session';
 import Progress from './pages/Progress';
 import Settings from './pages/Settings';
 
-// Route wrapper to handle subscription duration from URL
 const RouteHandler = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
