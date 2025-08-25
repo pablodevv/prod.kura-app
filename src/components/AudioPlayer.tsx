@@ -28,7 +28,6 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioUrl, sessionId, onComple
         setCurrentTime(audio.currentTime);
         progressRef.current = audio.currentTime;
 
-        // Mark session as complete when audio finishes
         if (audio.ended && !completedSessions.includes(sessionId)) {
           onComplete();
           setIsPlaying(false);
@@ -53,7 +52,6 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioUrl, sessionId, onComple
         audioRef.current.pause();
       } else {
         audioRef.current.play().catch(() => {
-          // Handle any playback errors
           setIsPlaying(false);
         });
       }
